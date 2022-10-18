@@ -48,7 +48,7 @@ const BasicForm = () => {
     validationSchema: basicSchema,
     onSubmit,
   })
-  console.log(errors);
+  // console.log(errors);
   return (
     <form
     onSubmit={handleSubmit} 
@@ -115,3 +115,9 @@ const BasicForm = () => {
   );
 };
 export default BasicForm;
+
+
+{/* <form autoComplete="off">
+      <label htmlFor="email">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" />
+</form> */}

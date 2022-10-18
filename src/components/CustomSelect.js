@@ -1,6 +1,6 @@
 import { useField } from "formik"
 
-export default function CustomInput({label, ...props}) {
+export default function CustomSelect({label, ...props}) {
 // useField helps you hook up inputs to Formik
 // field - info about the input field
 // meta- whether it's been touched or if there's an error
@@ -11,7 +11,7 @@ console.log(meta);
   return (
     <>
      <label>{label}</label>
-        <input 
+        <select
         {...field} 
         {...props}
         className={meta.touched && meta.error ? "input-error" : ""}
